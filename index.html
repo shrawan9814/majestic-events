@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majestic Events - Damak Music Fest</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Banner */
+        .header-banner {
+            background-color: gold;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .header-banner nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-banner nav ul li {
+            margin: 0 20px;
+        }
+
+        .header-banner nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* Title Section */
+        .title-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .title-section h1 {
+            font-size: 50px;
+            color: gold;
+        }
+
+        .title-section h2 {
+            font-size: 30px;
+            color: yellow;
+        }
+
+        /* Artist Banner */
+        .artist-banner img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        /* About Section */
+        .about-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .about-section h3 {
+            font-size: 25px;
+            color: gold;
+        }
+
+        .about-section p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: white;
+        }
+
+        /* Ticket Section */
+        .ticket-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .ticket-section h3 {
+            font-size: 25px;
+            color: yellow;
+        }
+
+        .ticket-section button {
+            background-color: gold;
+            color: black;
+            font-size: 20px;
+            padding: 15px 40px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* Payment Options */
+        #payment-options {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #payment-options button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        #payment-options img {
+            width: 150px;
+            height: auto;
+            margin: 0 10px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .footer button {
+            background-color: gold;
+            color: black;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Golden Banner -->
+    <div class="header-banner">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Majestic Events Title -->
+    <div class="title-section">
+        <h1>Majestic Events</h1>
+        <h2>Damak Music Fest</h2>
+    </div>
+
+    <!-- Artist Banner -->
+    <div class="artist-banner">
+        <img src="your-artist-banner.jpg" alt="Artist Banner">
+    </div>
+
+    <!-- About Event -->
+    <div class="about-section">
+        <h3>About Damak Music Fest</h3>
+        <p>This is a musical celebration featuring top local and national artists, bringing the best music to the heart of Damak.</p>
+    </div>
+
+    <!-- Buy Ticket Section -->
+    <div class="ticket-section">
+        <h3>Buy Tickets</h3>
+        <button onclick="openPaymentOptions()">Buy Now</button>
+    </div>
+
+    <!-- Payment Options (Hidden initially) -->
+    <div id="payment-options" class="payment-options">
+        <button onclick="window.location.href='https://esewa.com.np'">
+            <img src="esewa-logo.png" alt="eSewa" />
+        </button>
+        <button onclick="window.location.href='https://khalti.com'">
+            <img src="khalti-logo.png" alt="Khalti" />
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <button onclick="window.location.href='tnc.html'">Terms and Conditions</button>
+    </div>
+
+    <script>
+        // Function to toggle payment options
+        function openPaymentOptions() {
+            document.getElementById('payment-options').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+<!-- Footer -->
+<div class="footer">
+  <p>&copy; 2024 Majestic Events. All rights reserved.</p>
+</div>
